@@ -4,6 +4,8 @@ An original, consistent icon set for [VectorCraft](https://github.com/storytold/
 
 **555 entries / 547 distinct SVG drawings:** 115 toolbar, 276 panel, 61 menu and context, 103 cursor and handle variants.
 
+**How it ships:** the new icons come as part of the opt-in *Quiet* colour scheme ([storytold/vectorcraft#3848](https://github.com/storytold/vectorcraft/pull/3848)), so the default look doesn't change. Tracking issue: [storytold/vectorcraft#7820](https://github.com/storytold/vectorcraft/issues/7820).
+
 ## How to view
 
 - **In the browser:** open the PNGs in [`boards/`](boards/). Start with the before/after boards below, then the contact sheets of the proposed set (`approved-*-48px-dark.png` and `-light.png`).
@@ -69,12 +71,12 @@ In: replacing the SVGs behind the icon table (`assets/icons`, `icon_data.rs`, th
 
 ## Plan: small PRs by area
 
-1. **Pipeline and style rules:** add the new SVGs next to the old ones, the alias-map changes for roles that gain their own icon (`box3d`, graph and symbol variants, ellipse modes), an `ASSETS.md` row per file, no visible change yet.
+1. **Quiet icon-set lookup:** an icon set keyed by the active colour scheme (default: today's icons; Quiet: the new ones), falling back to the current icon when a new one is missing, plus the alias-map changes for roles that gain their own icon (`box3d`, graph and symbol variants, ellipse modes) and an `ASSETS.md` row per file. The default scheme renders exactly what it renders today.
 2. **Toolbar** (103 tool roles): switch the map; before/after screenshots at real size.
 3. **Panels** (Align, Pathfinder, Transform, Appearance, Layers, …): one or two PRs.
 4. **Menus and context actions.**
 5. **Cursors and handles:** the cursor catalogue and the procedurally painted handles.
-6. Remove the replaced Lucide/`dc-*` files and their notices once nothing references them.
+6. Only if Quiet later becomes the default: remove the replaced Lucide/`dc-*` files and their notices once nothing references them.
 
 Each PR is reviewable on its own and can be reverted without the others. The `cargo xtask assets` check enforces the provenance table at every step.
 
