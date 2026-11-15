@@ -1,0 +1,1438 @@
+{
+  "status": "complete current-source cursor and control inventory; dynamic previews listed separately in icon-inventory.md",
+  "sourceRoot": "repo root",
+  "cursorRoleCount": 96,
+  "cursorExpandedVariantCount": 103,
+  "cursors": [
+    {
+      "id": "cursor-arrow",
+      "role": "Arrow",
+      "artwork": "cursor-arrow",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:6; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-arrow-hollow",
+      "role": "ArrowHollow",
+      "artwork": "cursor-arrow-hollow",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:7; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-direct-anchor",
+      "role": "DirectAnchor",
+      "artwork": "cursor-direct-anchor",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:10; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-direct-anchor-selected",
+      "role": "DirectAnchorSelected",
+      "artwork": "cursor-direct-anchor-selected",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:12; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-reshape-segment",
+      "role": "ReshapeSegment",
+      "artwork": "cursor-reshape-segment",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:15; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-group-selection",
+      "role": "GroupSelection",
+      "artwork": "cursor-group-selection",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:17; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-selection-copy",
+      "role": "SelectionCopy",
+      "artwork": "cursor-selection-copy",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:19; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-move",
+      "role": "Move",
+      "artwork": "cursor-move",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:20; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-crosshair",
+      "role": "Crosshair",
+      "artwork": "cursor-crosshair",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:21; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-resize-h",
+      "role": "ResizeH",
+      "artwork": "cursor-resize-h",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:22; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-resize-v",
+      "role": "ResizeV",
+      "artwork": "cursor-resize-v",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:23; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-resize-nw-se",
+      "role": "ResizeNwSe",
+      "artwork": "cursor-resize-nw-se",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:24; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-resize-ne-sw",
+      "role": "ResizeNeSw",
+      "artwork": "cursor-resize-ne-sw",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:25; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-shear-h",
+      "role": "ShearH",
+      "artwork": "cursor-shear-h",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:28; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-shear-v",
+      "role": "ShearV",
+      "artwork": "cursor-shear-v",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:31; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-rotate",
+      "role": "Rotate",
+      "artwork": "cursor-rotate-0",
+      "reuse": "shared",
+      "source": "crates/tools/src/cursor.rs:32; crates/ui-egui/src/cursors.rs:582-677",
+      "note": "Same current artwork as cursor-rotate-0"
+    },
+    {
+      "id": "cursor-rotate-toward-0",
+      "role": "RotateToward(0)",
+      "artwork": "cursor-rotate-0",
+      "reuse": "shared",
+      "source": "crates/tools/src/cursor.rs:37; crates/ui-egui/src/cursors.rs:582-677",
+      "note": "Same current artwork as cursor-rotate-0"
+    },
+    {
+      "id": "cursor-rotate-toward-1",
+      "role": "RotateToward(1)",
+      "artwork": "cursor-rotate-1",
+      "reuse": "shared",
+      "source": "crates/tools/src/cursor.rs:37; crates/ui-egui/src/cursors.rs:582-677",
+      "note": "Same current artwork as cursor-rotate-1"
+    },
+    {
+      "id": "cursor-rotate-toward-2",
+      "role": "RotateToward(2)",
+      "artwork": "cursor-rotate-2",
+      "reuse": "shared",
+      "source": "crates/tools/src/cursor.rs:37; crates/ui-egui/src/cursors.rs:582-677",
+      "note": "Same current artwork as cursor-rotate-2"
+    },
+    {
+      "id": "cursor-rotate-toward-3",
+      "role": "RotateToward(3)",
+      "artwork": "cursor-rotate-3",
+      "reuse": "shared",
+      "source": "crates/tools/src/cursor.rs:37; crates/ui-egui/src/cursors.rs:582-677",
+      "note": "Same current artwork as cursor-rotate-3"
+    },
+    {
+      "id": "cursor-rotate-toward-4",
+      "role": "RotateToward(4)",
+      "artwork": "cursor-rotate-4",
+      "reuse": "shared",
+      "source": "crates/tools/src/cursor.rs:37; crates/ui-egui/src/cursors.rs:582-677",
+      "note": "Same current artwork as cursor-rotate-4"
+    },
+    {
+      "id": "cursor-rotate-toward-5",
+      "role": "RotateToward(5)",
+      "artwork": "cursor-rotate-5",
+      "reuse": "shared",
+      "source": "crates/tools/src/cursor.rs:37; crates/ui-egui/src/cursors.rs:582-677",
+      "note": "Same current artwork as cursor-rotate-5"
+    },
+    {
+      "id": "cursor-rotate-toward-6",
+      "role": "RotateToward(6)",
+      "artwork": "cursor-rotate-6",
+      "reuse": "shared",
+      "source": "crates/tools/src/cursor.rs:37; crates/ui-egui/src/cursors.rs:582-677",
+      "note": "Same current artwork as cursor-rotate-6"
+    },
+    {
+      "id": "cursor-rotate-toward-7",
+      "role": "RotateToward(7)",
+      "artwork": "cursor-rotate-7",
+      "reuse": "shared",
+      "source": "crates/tools/src/cursor.rs:37; crates/ui-egui/src/cursors.rs:582-677",
+      "note": "Same current artwork as cursor-rotate-7"
+    },
+    {
+      "id": "cursor-corner-radius",
+      "role": "CornerRadius",
+      "artwork": "cursor-corner-radius",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:39; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-pen",
+      "role": "Pen",
+      "artwork": "cursor-pen",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:41; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-pen-drawing",
+      "role": "PenDrawing",
+      "artwork": "cursor-pen-drawing",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:43; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-pen-add",
+      "role": "PenAdd",
+      "artwork": "cursor-pen-add",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:44; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-pen-delete",
+      "role": "PenDelete",
+      "artwork": "cursor-pen-delete",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:45; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-pen-close",
+      "role": "PenClose",
+      "artwork": "cursor-pen-close",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:46; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-pen-continue",
+      "role": "PenContinue",
+      "artwork": "cursor-pen-continue",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:47; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-anchor-point",
+      "role": "AnchorPoint",
+      "artwork": "cursor-anchor-point",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:50; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-curvature",
+      "role": "Curvature",
+      "artwork": "cursor-curvature",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:52; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-pen-join",
+      "role": "PenJoin",
+      "artwork": "cursor-pen-join",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:54; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-pen-convert",
+      "role": "PenConvert",
+      "artwork": "cursor-pen-convert",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:56; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-text",
+      "role": "Text",
+      "artwork": "cursor-text",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:57; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-hand",
+      "role": "Hand",
+      "artwork": "cursor-hand",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:58; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-hand-grab",
+      "role": "HandGrab",
+      "artwork": "cursor-hand-grab",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:59; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-zoom-in",
+      "role": "ZoomIn",
+      "artwork": "cursor-zoom-in",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:60; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-zoom-out",
+      "role": "ZoomOut",
+      "artwork": "cursor-zoom-out",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:61; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-eyedropper",
+      "role": "Eyedropper",
+      "artwork": "cursor-eyedropper",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:62; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-not-allowed",
+      "role": "NotAllowed",
+      "artwork": "cursor-not-allowed",
+      "reuse": "system",
+      "source": "crates/tools/src/cursor.rs:63; crates/ui-egui/src/cursors.rs:582-677",
+      "note": "System-owned cursor; preserve platform behavior, no replacement bitmap required."
+    },
+    {
+      "id": "cursor-busy",
+      "role": "Busy",
+      "artwork": "cursor-busy",
+      "reuse": "system",
+      "source": "crates/tools/src/cursor.rs:65; crates/ui-egui/src/cursors.rs:582-677",
+      "note": "System-owned cursor; preserve platform behavior, no replacement bitmap required."
+    },
+    {
+      "id": "cursor-add-stop",
+      "role": "AddStop",
+      "artwork": "cursor-add-stop",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:67; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-remove-stop",
+      "role": "RemoveStop",
+      "artwork": "cursor-remove-stop",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:69; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-slice",
+      "role": "Slice",
+      "artwork": "cursor-slice",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:71; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-slice-select",
+      "role": "SliceSelect",
+      "artwork": "cursor-slice-select",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:73; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-width",
+      "role": "Width",
+      "artwork": "cursor-width",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:75; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-width-add",
+      "role": "WidthAdd",
+      "artwork": "cursor-width-add",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:77; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-width-point",
+      "role": "WidthPoint",
+      "artwork": "cursor-width-point",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:79; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-blend",
+      "role": "Blend",
+      "artwork": "cursor-blend",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:81; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-blend-object",
+      "role": "BlendObject",
+      "artwork": "cursor-blend-object",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:83; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-blend-anchor",
+      "role": "BlendAnchor",
+      "artwork": "cursor-blend-anchor",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:85; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-objects-on-path",
+      "role": "ObjectsOnPath",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:88; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-path-bracket",
+      "role": "PathBracket",
+      "artwork": "cursor-path-bracket",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:90; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-type-widget",
+      "role": "TypeWidget",
+      "artwork": "cursor-type-widget",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:93; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-loaded-text",
+      "role": "LoadedText",
+      "artwork": "cursor-loaded-text",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:96; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-shape-builder",
+      "role": "ShapeBuilder",
+      "artwork": "cursor-shape-builder",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:98; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-shape-builder-erase",
+      "role": "ShapeBuilderErase",
+      "artwork": "cursor-shape-builder-erase",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:100; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-lasso",
+      "role": "Lasso",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:102; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-magic-wand",
+      "role": "MagicWand",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:104; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-pencil",
+      "role": "Pencil",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:106; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-pencil-new",
+      "role": "PencilNew",
+      "artwork": "cursor-pencil-new",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:109; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-pencil-close",
+      "role": "PencilClose",
+      "artwork": "cursor-pencil-close",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:114; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-pencil-straight",
+      "role": "PencilStraight",
+      "artwork": "cursor-pencil-straight",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:117; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-pencil-continue",
+      "role": "PencilContinue",
+      "artwork": "cursor-pencil-continue",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:121; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-paintbrush",
+      "role": "Paintbrush",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:123; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-paintbrush-close",
+      "role": "PaintbrushClose",
+      "artwork": "cursor-pencil-close",
+      "reuse": "base+modifier",
+      "source": "crates/tools/src/cursor.rs:127; crates/ui-egui/src/cursors.rs:582-677",
+      "note": "Same current artwork as cursor-pencil-close"
+    },
+    {
+      "id": "cursor-blob-brush",
+      "role": "BlobBrush",
+      "artwork": "cursor-blob-brush",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:130; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-eraser",
+      "role": "Eraser",
+      "artwork": "cursor-blob-brush",
+      "reuse": "shared",
+      "source": "crates/tools/src/cursor.rs:133; crates/ui-egui/src/cursors.rs:582-677",
+      "note": "Same current artwork as cursor-blob-brush"
+    },
+    {
+      "id": "cursor-smooth",
+      "role": "Smooth",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:135; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-path-eraser",
+      "role": "PathEraser",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:137; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-join",
+      "role": "Join",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:139; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-knife",
+      "role": "Knife",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:141; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-shaper",
+      "role": "Shaper",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:143; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-live-paint-bucket",
+      "role": "LivePaintBucket",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:145; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-measure",
+      "role": "Measure",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:147; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-print-tiling",
+      "role": "PrintTiling",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:149; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-symbol-sprayer",
+      "role": "SymbolSprayer",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:151; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-symbol-shifter",
+      "role": "SymbolShifter",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:153; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-symbol-scruncher",
+      "role": "SymbolScruncher",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:155; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-symbol-sizer",
+      "role": "SymbolSizer",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:157; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-symbol-spinner",
+      "role": "SymbolSpinner",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:159; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-symbol-stainer",
+      "role": "SymbolStainer",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:161; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-symbol-screener",
+      "role": "SymbolScreener",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:163; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-symbol-styler",
+      "role": "SymbolStyler",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:165; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-type-vertical",
+      "role": "TypeVertical",
+      "artwork": "cursor-text",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:167; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Text; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-type-area",
+      "role": "TypeArea",
+      "artwork": "cursor-type-area",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:169; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-type-area-vertical",
+      "role": "TypeAreaVertical",
+      "artwork": "cursor-type-area-vertical",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:171; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-type-on-path",
+      "role": "TypeOnPath",
+      "artwork": "cursor-type-on-path",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:173; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-type-on-path-vertical",
+      "role": "TypeOnPathVertical",
+      "artwork": "cursor-type-on-path-vertical",
+      "reuse": "base",
+      "source": "crates/tools/src/cursor.rs:175; crates/ui-egui/src/cursors.rs:582-677",
+      "note": ""
+    },
+    {
+      "id": "cursor-scissors",
+      "role": "Scissors",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:177; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-scissors-not-allowed",
+      "role": "ScissorsNotAllowed",
+      "artwork": "cursor-not-allowed",
+      "reuse": "system",
+      "source": "crates/tools/src/cursor.rs:179; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows NotAllowed; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-mesh-add",
+      "role": "MeshAdd",
+      "artwork": "cursor-pen-add",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:181; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows PenAdd; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-puppet-pin",
+      "role": "PuppetPin",
+      "artwork": "cursor-pen-add",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:183; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows PenAdd; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-anchor-eraser",
+      "role": "AnchorEraser",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:185; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-extend-path",
+      "role": "ExtendPath",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:187; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-measure-inspect",
+      "role": "MeasureInspect",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:189; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-parametric-shape",
+      "role": "ParametricShape",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:192; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-corner-tool",
+      "role": "CornerTool",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:195; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-slide-anchor",
+      "role": "SlideAnchor",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:198; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-shared-edge",
+      "role": "SharedEdge",
+      "artwork": "cursor-crosshair",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:201; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Crosshair; record role separately, draw one shared current artwork."
+    },
+    {
+      "id": "cursor-smart-pen",
+      "role": "SmartPen",
+      "artwork": "cursor-pen",
+      "reuse": "stand-in",
+      "source": "crates/tools/src/cursor.rs:204; crates/ui-egui/src/cursors.rs:582-677; crates/tools/src/cursor.rs:312-349",
+      "note": "Current source borrows Pen; record role separately, draw one shared current artwork."
+    }
+  ],
+  "controls": [
+    {
+      "id": "proc-character-all-caps",
+      "role": "All Caps",
+      "artwork": "proc-character-all-caps",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/character.rs:1211",
+      "note": "Replace font-dependent glyph with original vector lettering.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-character-small-caps",
+      "role": "Small Caps",
+      "artwork": "proc-character-small-caps",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/character.rs:1211",
+      "note": "Replace font-dependent glyph with original vector lettering.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-character-superscript",
+      "role": "Superscript",
+      "artwork": "proc-character-superscript",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/character.rs:1211",
+      "note": "Replace font-dependent glyph with original vector lettering.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-character-subscript",
+      "role": "Subscript",
+      "artwork": "proc-character-subscript",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/character.rs:1211",
+      "note": "Replace font-dependent glyph with original vector lettering.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-character-underline",
+      "role": "Underline",
+      "artwork": "proc-character-underline",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/character.rs:1211",
+      "note": "Replace font-dependent glyph with original vector lettering.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-character-strikethrough",
+      "role": "Strikethrough",
+      "artwork": "proc-character-strikethrough",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/character.rs:1211",
+      "note": "Replace font-dependent glyph with original vector lettering.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-transform-perspective",
+      "role": "Perspective Distort",
+      "artwork": "proc-transform-perspective",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/free_transform.rs:107",
+      "note": "",
+      "category": "Toolbar"
+    },
+    {
+      "id": "proc-transform-distort",
+      "role": "Free Distort",
+      "artwork": "proc-transform-distort",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/free_transform.rs:107",
+      "note": "",
+      "category": "Toolbar"
+    },
+    {
+      "id": "proc-orientation-portrait",
+      "role": "Portrait page orientation",
+      "artwork": "proc-orientation-portrait",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/widgets/panel_chrome.rs:109",
+      "note": "",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-orientation-landscape",
+      "role": "Landscape page orientation",
+      "artwork": "proc-orientation-landscape",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/widgets/panel_chrome.rs:109",
+      "note": "",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-layout-grid-by-row",
+      "role": "Rearrange artboards grid-by-row",
+      "artwork": "proc-layout-grid-by-row",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/widgets/panel_chrome.rs:133",
+      "note": "GridByRow cells (0,0),(1,0),(0,1),(1,1); RTL mirrors x. Caller: dialogs/rearrange_artboards.rs:44-56.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-layout-grid-by-column",
+      "role": "Rearrange artboards grid-by-column",
+      "artwork": "proc-layout-grid-by-column",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/widgets/panel_chrome.rs:133",
+      "note": "GridByColumn cells (0,0),(0,1),(1,0),(1,1); RTL mirrors x. Caller: dialogs/rearrange_artboards.rs:44-56.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-layout-row",
+      "role": "Rearrange artboards row",
+      "artwork": "proc-layout-row",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/widgets/panel_chrome.rs:133",
+      "note": "Row cells (0,0),(1,0),(2,0); RTL reverses direction. Caller: dialogs/rearrange_artboards.rs:44-56.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-layout-column",
+      "role": "Rearrange artboards column",
+      "artwork": "proc-layout-column",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/widgets/panel_chrome.rs:133",
+      "note": "Column cells (0,0),(0,1),(0,2); RTL mirror is identical geometry. Caller: dialogs/rearrange_artboards.rs:44-56.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-blend-align-page",
+      "role": "Blend Align to Page",
+      "artwork": "proc-blend-align-page",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/dialogs/blend_options.rs:105",
+      "note": "",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-blend-align-path",
+      "role": "Blend Align to Path",
+      "artwork": "proc-blend-align-path",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/dialogs/blend_options.rs:105",
+      "note": "",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-window-minimize",
+      "role": "Minimize window",
+      "artwork": "proc-window-minimize",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/titlebar.rs:115",
+      "note": "",
+      "category": "Menus-context"
+    },
+    {
+      "id": "proc-window-maximize",
+      "role": "Maximize window",
+      "artwork": "proc-window-maximize",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/titlebar.rs:115",
+      "note": "",
+      "category": "Menus-context"
+    },
+    {
+      "id": "proc-window-restore",
+      "role": "Restore window",
+      "artwork": "proc-window-restore",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/titlebar.rs:115",
+      "note": "",
+      "category": "Menus-context"
+    },
+    {
+      "id": "proc-window-close",
+      "role": "Close window",
+      "artwork": "proc-window-close",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/titlebar.rs:115",
+      "note": "",
+      "category": "Menus-context"
+    },
+    {
+      "id": "proc-layer-target-empty",
+      "role": "Layer appearance target: empty",
+      "artwork": "proc-layer-target-empty",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/layers/rows.rs:570",
+      "note": "Appearance drop-target hover changes color/stroke only. Styled+targeted draws inner ring then center fill.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-layer-target-targeted",
+      "role": "Layer appearance target: targeted",
+      "artwork": "proc-layer-target-targeted",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/layers/rows.rs:570",
+      "note": "Appearance drop-target hover changes color/stroke only. Styled+targeted draws inner ring then center fill.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-layer-target-styled",
+      "role": "Layer appearance target: styled",
+      "artwork": "proc-layer-target-styled",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/layers/rows.rs:570",
+      "note": "Appearance drop-target hover changes color/stroke only. Styled+targeted draws inner ring then center fill.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-layer-target-styled-targeted",
+      "role": "Layer appearance target: styled-targeted",
+      "artwork": "proc-layer-target-styled-targeted",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/layers/rows.rs:570",
+      "note": "Appearance drop-target hover changes color/stroke only. Styled+targeted draws inner ring then center fill.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-layer-outline-eye",
+      "role": "Layer outline visibility",
+      "artwork": "proc-layer-outline-eye",
+      "reuse": "base+modifier",
+      "source": "crates/ui-egui/src/panels/layers/rows.rs:465",
+      "note": "Existing eye SVG plus procedural outer ring.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-layer-current-corner",
+      "role": "Current layer corner indicator",
+      "artwork": "proc-layer-current-corner",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/layers/rows.rs:235",
+      "note": "",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-layer-selection-square",
+      "role": "Layer selection indicator",
+      "artwork": "proc-layer-selection-square",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/layers/rows.rs:354",
+      "note": "",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-link-missing",
+      "role": "Link status missing",
+      "artwork": "proc-link-missing",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/links.rs:258",
+      "note": "Current colored badge; shape must convey status without color or font text.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-link-modified",
+      "role": "Link status modified",
+      "artwork": "proc-link-modified",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/links.rs:258",
+      "note": "Current colored badge; shape must convey status without color or font text.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-gradient-midpoint",
+      "role": "Gradient midpoint drag handle",
+      "artwork": "proc-gradient-midpoint",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/gradient.rs:743",
+      "note": "Selected/hovered states change tint only.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-gradient-color-stop",
+      "role": "Gradient color-stop drag handle",
+      "artwork": "proc-gradient-color-stop",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/gradient.rs:749",
+      "note": "Selected/hovered states change tint only.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-swatch-registration",
+      "role": "Swatch registration marker",
+      "artwork": "proc-swatch-registration",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/swatches/tiles.rs:49",
+      "note": "",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-swatch-process",
+      "role": "Swatch process marker",
+      "artwork": "proc-swatch-process",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/swatches/tiles.rs:101",
+      "note": "",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-swatch-global",
+      "role": "Swatch global marker",
+      "artwork": "proc-swatch-global",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/swatches/tiles.rs:101",
+      "note": "",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-swatch-spot",
+      "role": "Swatch spot marker",
+      "artwork": "proc-swatch-spot",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/swatches/tiles.rs:101",
+      "note": "",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-swatch-cmyk",
+      "role": "Swatch cmyk marker",
+      "artwork": "proc-swatch-cmyk",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/swatches/tiles.rs:101",
+      "note": "Color-mode diagrams encode color content; keep meaningful color data outside monochrome action glyphs.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-swatch-rgb",
+      "role": "Swatch rgb marker",
+      "artwork": "proc-swatch-rgb",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/swatches/tiles.rs:101",
+      "note": "Color-mode diagrams encode color content; keep meaningful color data outside monochrome action glyphs.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-swatch-gray",
+      "role": "Swatch gray marker",
+      "artwork": "proc-swatch-gray",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/swatches/tiles.rs:101",
+      "note": "Color-mode diagrams encode color content; keep meaningful color data outside monochrome action glyphs.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-swatch-lab",
+      "role": "Swatch lab marker",
+      "artwork": "proc-swatch-lab",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/swatches/tiles.rs:101",
+      "note": "Color-mode diagrams encode color content; keep meaningful color data outside monochrome action glyphs.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-swatch-corner-global",
+      "role": "Swatch thumbnail global marker",
+      "artwork": "proc-swatch-corner-global",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/swatches/tiles.rs:199",
+      "note": "",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-swatch-corner-spot",
+      "role": "Swatch thumbnail spot marker",
+      "artwork": "proc-swatch-corner-spot",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/swatches/tiles.rs:199",
+      "note": "",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-bullet-none",
+      "role": "Bullet preset none",
+      "artwork": "proc-bullet-none",
+      "reuse": "content",
+      "source": "crates/ui-egui/src/panels/paragraph.rs:555",
+      "note": "Content specimen in bullet choice row; retain shape meaning.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-bullet-dot",
+      "role": "Bullet preset dot",
+      "artwork": "proc-bullet-dot",
+      "reuse": "content",
+      "source": "crates/ui-egui/src/panels/paragraph.rs:555",
+      "note": "Content specimen in bullet choice row; retain shape meaning.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-bullet-dash",
+      "role": "Bullet preset dash",
+      "artwork": "proc-bullet-dash",
+      "reuse": "content",
+      "source": "crates/ui-egui/src/panels/paragraph.rs:555",
+      "note": "Content specimen in bullet choice row; retain shape meaning.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-bullet-circle",
+      "role": "Bullet preset circle",
+      "artwork": "proc-bullet-circle",
+      "reuse": "content",
+      "source": "crates/ui-egui/src/panels/paragraph.rs:555",
+      "note": "Content specimen in bullet choice row; retain shape meaning.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-bullet-square",
+      "role": "Bullet preset square",
+      "artwork": "proc-bullet-square",
+      "reuse": "content",
+      "source": "crates/ui-egui/src/panels/paragraph.rs:555",
+      "note": "Content specimen in bullet choice row; retain shape meaning.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-brush-direction-left",
+      "role": "Art brush direction left",
+      "artwork": "proc-brush-direction-left",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/dialogs/brush_art_options.rs:506",
+      "note": "",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-brush-direction-right",
+      "role": "Art brush direction right",
+      "artwork": "proc-brush-direction-right",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/dialogs/brush_art_options.rs:506",
+      "note": "",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-brush-direction-up",
+      "role": "Art brush direction up",
+      "artwork": "proc-brush-direction-up",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/dialogs/brush_art_options.rs:506",
+      "note": "",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-brush-direction-down",
+      "role": "Art brush direction down",
+      "artwork": "proc-brush-direction-down",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/dialogs/brush_art_options.rs:506",
+      "note": "",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-action-record",
+      "role": "Record action",
+      "artwork": "proc-action-record",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/actions.rs:2054",
+      "note": "",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-action-enabled-check",
+      "role": "Action enabled check",
+      "artwork": "proc-action-enabled-check",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/actions.rs:1831",
+      "note": "",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-action-mixed-dash",
+      "role": "Action mixed enabled state",
+      "artwork": "proc-action-mixed-dash",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/panels/actions.rs:1831",
+      "note": "",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-menu-check",
+      "role": "Checked menu item",
+      "artwork": "proc-menu-check",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/menus/bar.rs:170",
+      "note": "Also widgets/buttons.rs:207, paragraph presets, workspaces; font glyph \u2713.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-font-disclosure-collapsed",
+      "role": "Font family collapsed",
+      "artwork": "proc-font-disclosure-collapsed",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/font_menu.rs:1243",
+      "note": "Current font triangle; matches general disclosure function.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-font-disclosure-expanded",
+      "role": "Font family expanded",
+      "artwork": "proc-font-disclosure-expanded",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/font_menu.rs:1243",
+      "note": "Current font triangle; matches general disclosure function.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-sort-ascending",
+      "role": "Reverse table sort ascending",
+      "artwork": "proc-sort-ascending",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/credits.rs:250",
+      "note": "Current font triangle.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-sort-descending",
+      "role": "Reverse table sort descending",
+      "artwork": "proc-sort-descending",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/credits.rs:250",
+      "note": "Current font triangle.",
+      "category": "Panels"
+    },
+    {
+      "id": "proc-warning",
+      "role": "Warning status",
+      "artwork": "proc-warning",
+      "reuse": "base",
+      "source": "crates/ui-egui/src/dialogs/pdf_presets.rs:138",
+      "note": "Current warning font glyph, also export/shortcut error text.",
+      "category": "Panels"
+    },
+    {"id":"proc-reference-top-left","role":"Reference point top left","artwork":"proc-reference-top-left","reuse":"base+modifier","source":"crates/ui-egui/src/widgets/blend.rs:110-165","note":"Nine selectable cells; index 0. Arrow keys move the selection.","category":"Panels"},
+    {"id":"proc-reference-top","role":"Reference point top","artwork":"proc-reference-top","reuse":"base+modifier","source":"crates/ui-egui/src/widgets/blend.rs:110-165","note":"Index 1.","category":"Panels"},
+    {"id":"proc-reference-top-right","role":"Reference point top right","artwork":"proc-reference-top-right","reuse":"base+modifier","source":"crates/ui-egui/src/widgets/blend.rs:110-165","note":"Index 2.","category":"Panels"},
+    {"id":"proc-reference-left","role":"Reference point left","artwork":"proc-reference-left","reuse":"base+modifier","source":"crates/ui-egui/src/widgets/blend.rs:110-165","note":"Index 3.","category":"Panels"},
+    {"id":"proc-reference-center","role":"Reference point center","artwork":"proc-reference-center","reuse":"base+modifier","source":"crates/ui-egui/src/widgets/blend.rs:110-165","note":"Index 4.","category":"Panels"},
+    {"id":"proc-reference-right","role":"Reference point right","artwork":"proc-reference-right","reuse":"base+modifier","source":"crates/ui-egui/src/widgets/blend.rs:110-165","note":"Index 5.","category":"Panels"},
+    {"id":"proc-reference-bottom-left","role":"Reference point bottom left","artwork":"proc-reference-bottom-left","reuse":"base+modifier","source":"crates/ui-egui/src/widgets/blend.rs:110-165","note":"Index 6.","category":"Panels"},
+    {"id":"proc-reference-bottom","role":"Reference point bottom","artwork":"proc-reference-bottom","reuse":"base+modifier","source":"crates/ui-egui/src/widgets/blend.rs:110-165","note":"Index 7.","category":"Panels"},
+    {"id":"proc-reference-bottom-right","role":"Reference point bottom right","artwork":"proc-reference-bottom-right","reuse":"base+modifier","source":"crates/ui-egui/src/widgets/blend.rs:110-165","note":"Index 8.","category":"Panels"},
+    {"id":"proc-reference-unset","role":"Reference point unset","artwork":"proc-reference-unset","reuse":"base+modifier","source":"crates/ui-egui/src/widgets/blend.rs:110-165; crates/ui-egui/src/panels/properties.rs:441","note":"Current index outside 0..8 fills no cell, used for automatic Objects on Path pivot.","category":"Panels"},
+    {"id":"proc-checkbox-off","role":"Unchecked checkbox","artwork":"proc-checkbox-off","reuse":"base","source":"crates/ui-egui/src/widgets/toggles.rs:63-85","note":"Disabled/hover states alter tint only.","category":"Menus-context"},
+    {"id":"proc-checkbox-on","role":"Checked checkbox","artwork":"proc-checkbox-on","reuse":"base+modifier","source":"crates/ui-egui/src/widgets/toggles.rs:63-85","note":"Box plus vector check.","category":"Menus-context"},
+    {"id":"proc-checkbox-mixed","role":"Mixed checkbox","artwork":"proc-checkbox-mixed","reuse":"base+modifier","source":"crates/ui-egui/src/widgets/toggles.rs:63-85","note":"Box plus horizontal dash.","category":"Menus-context"},
+    {"id":"proc-radio-off","role":"Unselected radio button","artwork":"proc-radio-off","reuse":"base","source":"crates/ui-egui/src/widgets/toggles.rs:100-109","note":"","category":"Menus-context"},
+    {"id":"proc-radio-on","role":"Selected radio button","artwork":"proc-radio-on","reuse":"base+modifier","source":"crates/ui-egui/src/widgets/toggles.rs:100-109","note":"","category":"Menus-context"},
+    {"id":"proc-proxy-fill","role":"Active fill proxy","artwork":"proc-proxy-fill","reuse":"base","source":"crates/ui-egui/src/widgets/chips.rs:213-276","note":"Foreground filled square; paint interior is live document data; X switches active paint.","category":"Toolbar"},
+    {"id":"proc-proxy-stroke","role":"Active stroke proxy","artwork":"proc-proxy-stroke","reuse":"base","source":"crates/ui-egui/src/widgets/chips.rs:213-276","note":"Foreground square frame; paint interior is live document data; X switches active paint.","category":"Toolbar"},
+    {"id":"proc-proxy-fill-mixed","role":"Mixed fill proxy","artwork":"proc-proxy-fill-mixed","reuse":"base+modifier","source":"crates/ui-egui/src/widgets/chips.rs:151-168","note":"Current source uses a question mark.","category":"Toolbar"},
+    {"id":"proc-proxy-stroke-mixed","role":"Mixed stroke proxy","artwork":"proc-proxy-stroke-mixed","reuse":"base+modifier","source":"crates/ui-egui/src/widgets/chips.rs:151-168","note":"Current source uses a question mark in the frame hole.","category":"Toolbar"},
+    {"id":"proc-proxy-default","role":"Default fill and stroke","artwork":"proc-proxy-default","reuse":"base","source":"crates/ui-egui/src/widgets/chips.rs:247-258","note":"D resets default paint.","category":"Toolbar"},
+    {"id":"proc-paint-none","role":"No paint","artwork":"proc-paint-none","reuse":"base","source":"crates/ui-egui/src/widgets/chips.rs:8-10; crates/ui-egui/src/toolbar.rs:589-595","note":"Slash over chip; shortcut /. Registered dc-fill-none is not used by this painter.","category":"Toolbar"},
+    {"id":"proc-spinner-up","role":"Increment numeric value","artwork":"proc-spinner-up","reuse":"base","source":"crates/ui-egui/src/widgets/numeric.rs:1243-1254","note":"Vector chevron; Up in focused numeric field has same value function.","category":"Panels"},
+    {"id":"proc-spinner-down","role":"Decrement numeric value","artwork":"proc-spinner-down","reuse":"base","source":"crates/ui-egui/src/widgets/numeric.rs:1243-1254","note":"Vector chevron; Down in focused numeric field has same value function.","category":"Panels"},
+    {"id":"proc-tab-left","role":"Left-justified tab; top-justified in vertical type","artwork":"proc-tab-left","reuse":"base","source":"crates/ui-egui/src/panels/tabs.rs:18-30,496-500,621-628","note":"Same font glyph appears in button and ruler.","category":"Panels"},
+    {"id":"proc-tab-center","role":"Center-justified tab","artwork":"proc-tab-center","reuse":"base","source":"crates/ui-egui/src/panels/tabs.rs:18-30,496-500,621-628","note":"","category":"Panels"},
+    {"id":"proc-tab-right","role":"Right-justified tab; bottom-justified in vertical type","artwork":"proc-tab-right","reuse":"base","source":"crates/ui-egui/src/panels/tabs.rs:18-30,496-500,621-628","note":"","category":"Panels"},
+    {"id":"proc-tab-decimal","role":"Decimal-justified tab","artwork":"proc-tab-decimal","reuse":"base","source":"crates/ui-egui/src/panels/tabs.rs:18-30,496-500,621-628","note":"","category":"Panels"},
+    {"id":"proc-indent-first-line","role":"First-line left indent marker","artwork":"proc-indent-first-line","reuse":"base","source":"crates/ui-egui/src/panels/tabs.rs:210-237","note":"Upper downward triangle.","category":"Panels"},
+    {"id":"proc-indent-left","role":"Paragraph left indent marker","artwork":"proc-indent-left","reuse":"base","source":"crates/ui-egui/src/panels/tabs.rs:210-237","note":"Lower upward triangle.","category":"Panels"},
+    {"id":"proc-reset-unchanged","role":"Reset parameter at default","artwork":"proc-reset-unchanged","reuse":"base","source":"crates/ui-egui/src/dialogs/revolve.rs:662-679","note":"Hollow dot.","category":"Panels"},
+    {"id":"proc-reset-changed","role":"Reset changed or mixed parameter","artwork":"proc-reset-changed","reuse":"base","source":"crates/ui-egui/src/dialogs/revolve.rs:662-679","note":"Filled dot.","category":"Panels"},
+    {"id":"proc-recolor-included","role":"Include color mapping","artwork":"proc-recolor-included","reuse":"base","source":"crates/ui-egui/src/dialogs/recolor.rs:746-766","note":"Solid right arrow.","category":"Panels"},
+    {"id":"proc-recolor-excluded","role":"Exclude color mapping","artwork":"proc-recolor-excluded","reuse":"base","source":"crates/ui-egui/src/dialogs/recolor.rs:746-766","note":"Dashed line without arrowhead.","category":"Panels"},
+    {"id":"proc-mask-disabled","role":"Opacity mask disabled","artwork":"proc-mask-disabled","reuse":"base+modifier","source":"crates/ui-egui/src/panels/transparency.rs:125-128","note":"Cross over live mask thumbnail.","category":"Panels"},
+    {"id":"proc-angle-dial","role":"Angle dial","artwork":"proc-angle-dial","reuse":"parametric","source":"crates/ui-egui/src/widgets/blend.rs:208-228","note":"Live value determines hand angle; Shift snaps45 degrees. Preserve as parametric control.","category":"Panels"},
+    {"id":"proc-anchor-hollow","role":"Unselected path anchor","artwork":"proc-anchor-hollow","reuse":"base","source":"crates/ui-egui/src/canvas/overlays.rs:83-95","note":"Canvas manipulation handle, not toolbar button.","category":"Panels"},
+    {"id":"proc-anchor-filled","role":"Selected path anchor","artwork":"proc-anchor-filled","reuse":"base","source":"crates/ui-egui/src/canvas/overlays.rs:83-95","note":"Canvas manipulation handle.","category":"Panels"},
+    {"id":"proc-direction-solid","role":"Solid direction handle endpoint","artwork":"proc-direction-solid","reuse":"base","source":"crates/ui-egui/src/canvas/overlays.rs:54-80","note":"Size preference scales this circle.","category":"Panels"},
+    {"id":"proc-direction-hollow","role":"Hollow direction handle endpoint","artwork":"proc-direction-hollow","reuse":"base","source":"crates/ui-egui/src/canvas/overlays.rs:54-80","note":"Large variant changes radius only.","category":"Panels"},
+    {"id":"proc-blend-appearance","role":"Blend appearance widget","artwork":"proc-blend-appearance","reuse":"base","source":"crates/ui-egui/src/canvas/overlays.rs:253-270","note":"Hollow round handle above spine; preserve live tether geometry.","category":"Panels"},
+    {"id":"proc-blend-easing","role":"Blend easing widget","artwork":"proc-blend-easing","reuse":"base","source":"crates/ui-egui/src/canvas/overlays.rs:253-270","note":"Filled round handle below spine.","category":"Panels"},
+    {"id":"proc-path-member","role":"Objects on Path member widget","artwork":"proc-path-member","reuse":"base","source":"crates/ui-egui/src/canvas/overlays.rs:294-303","note":"Unchosen ring; chosen state fills it. Tethers use dynamic document geometry.","category":"Panels"},
+    {"id":"proc-path-member-chosen","role":"Chosen Objects on Path member widget","artwork":"proc-path-member-chosen","reuse":"base+modifier","source":"crates/ui-egui/src/canvas/overlays.rs:294-303","note":"","category":"Panels"},
+    {"id":"proc-path-rotate-all","role":"Objects on Path Rotate All widget","artwork":"proc-path-rotate-all","reuse":"base","source":"crates/ui-egui/src/canvas/overlays.rs:276-287","note":"Hollow circle with live tether.","category":"Panels"},
+    {"id":"proc-path-space","role":"Objects on Path Space widget","artwork":"proc-path-space","reuse":"base","source":"crates/ui-egui/src/canvas/overlays.rs:311-318","note":"Hollow square with live tether.","category":"Panels"},
+    {"id":"proc-path-move-all","role":"Objects on Path Move All widget","artwork":"proc-path-move-all","reuse":"base","source":"crates/ui-egui/src/canvas/overlays.rs:324-331","note":"Hollow diamond with live tether.","category":"Panels"},
+    {"id":"proc-material-position","role":"3D material graphic position handle","artwork":"proc-material-position","reuse":"base","source":"crates/ui-egui/src/panels/three_d.rs:441-451","note":"Chosen state increases radius; preserve parametric placement.","category":"Panels"},
+    {"id":"proc-light-front","role":"Front light position handle","artwork":"proc-light-front","reuse":"parametric","source":"crates/ui-egui/src/dialogs/revolve_gizmo.rs:412-435","note":"Sun handle; light color is data, not action tint.","category":"Panels"},
+    {"id":"proc-light-back","role":"Back light position handle","artwork":"proc-light-back","reuse":"parametric","source":"crates/ui-egui/src/dialogs/revolve_gizmo.rs:412-435","note":"Hollow sun handle, dashed back guide; dynamic gizmo remains procedural.","category":"Panels"},
+    {"id":"proc-live-corner","role":"Live corner radius widget","artwork":"proc-live-corner","reuse":"base","source":"crates/ui-egui/src/canvas/overlays.rs:200-216","note":"Ring plus center dot; layer-color and size states remain procedural.","category":"Panels"},
+    {"id":"proc-curve-point-hollow","role":"Unselected curvature point","artwork":"proc-curve-point-hollow","reuse":"base","source":"crates/ui-egui/src/canvas/overlays.rs:93-95","note":"Round anchor rather than square.","category":"Panels"},
+    {"id":"proc-curve-point-filled","role":"Selected curvature point","artwork":"proc-curve-point-filled","reuse":"base","source":"crates/ui-egui/src/canvas/overlays.rs:93-95","note":"","category":"Panels"},
+    {"id":"proc-type-point","role":"Point type conversion widget","artwork":"proc-type-point","reuse":"base","source":"crates/ui-egui/src/canvas/overlays.rs:232-237","note":"Hollow circle.","category":"Panels"},
+    {"id":"proc-type-area","role":"Area type conversion widget","artwork":"proc-type-area","reuse":"base","source":"crates/ui-egui/src/canvas/overlays.rs:232-237","note":"Filled circle.","category":"Panels"},
+    {"id":"proc-pie-angle","role":"Live ellipse pie angle widget","artwork":"proc-pie-angle","reuse":"base","source":"crates/ui-egui/src/canvas/overlays.rs:240-247","note":"Round drag handle on live angle tether.","category":"Panels"},
+    {"id":"proc-shaper-face","role":"Shaper face selection widget","artwork":"proc-shaper-face","reuse":"base","source":"crates/ui-egui/src/canvas/tool_overlays.rs:467-478","note":"Right arrow in ring.","category":"Panels"},
+    {"id":"proc-shaper-construction","role":"Shaper construction widget","artwork":"proc-shaper-construction","reuse":"base","source":"crates/ui-egui/src/canvas/tool_overlays.rs:467-478","note":"Left arrow in ring.","category":"Panels"},
+    {"id":"proc-mirror-end","role":"Mirror axis endpoint","artwork":"proc-mirror-end","reuse":"base","source":"crates/ui-egui/src/canvas/tool_overlays.rs:483-505","note":"Round endpoint; live axis stays procedural.","category":"Panels"},
+    {"id":"proc-mirror-center","role":"Mirror axis center","artwork":"proc-mirror-center","reuse":"base","source":"crates/ui-egui/src/canvas/tool_overlays.rs:483-505","note":"Square central drag handle.","category":"Panels"},
+    {"id":"proc-repeat-row","role":"Grid repeat row resize","artwork":"proc-repeat-row","reuse":"base","source":"crates/ui-egui/src/canvas/tool_overlays.rs:510-535","note":"Round resize handle shared with column and corner.","category":"Panels"},
+    {"id":"proc-repeat-column","role":"Grid repeat column resize","artwork":"proc-repeat-row","reuse":"shared","source":"crates/ui-egui/src/canvas/tool_overlays.rs:510-535","note":"Same round artwork as row handle.","category":"Panels"},
+    {"id":"proc-repeat-corner","role":"Grid repeat corner resize","artwork":"proc-repeat-row","reuse":"shared","source":"crates/ui-egui/src/canvas/tool_overlays.rs:510-535","note":"Same round artwork as row handle.","category":"Panels"},
+    {"id":"proc-repeat-spacing","role":"Horizontal grid repeat spacing","artwork":"proc-repeat-spacing","reuse":"base","source":"crates/ui-egui/src/canvas/tool_overlays.rs:525-530","note":"Vertical bar across horizontal gap.","category":"Panels"},
+    {"id":"proc-repeat-spacing-vertical","role":"Vertical grid repeat spacing","artwork":"proc-repeat-spacing-vertical","reuse":"base","source":"crates/ui-egui/src/canvas/tool_overlays.rs:525-530","note":"Horizontal bar across vertical gap.","category":"Panels"},
+    {"id":"proc-rotate-view-dial","role":"Rotate View live angle dial","artwork":"proc-rotate-view-dial","reuse":"parametric","source":"crates/ui-egui/src/canvas/tool_overlays.rs:544-560","note":"Needle and numeric angle depend on live view; retain parametric control.","category":"Panels"},
+    {"id":"proc-layout-grid-by-row-rtl","role":"Rearrange artboards row-first grid RTL","artwork":"proc-layout-grid-by-row-rtl","reuse":"base+modifier","source":"crates/ui-egui/src/dialogs/rearrange_artboards.rs:44-56; crates/ui-egui/src/widgets/panel_chrome.rs:133","note":"Horizontal mirror of row-first grid.","category":"Panels"},
+    {"id":"proc-layout-grid-by-column-rtl","role":"Rearrange artboards column-first grid RTL","artwork":"proc-layout-grid-by-column-rtl","reuse":"base+modifier","source":"crates/ui-egui/src/dialogs/rearrange_artboards.rs:44-56; crates/ui-egui/src/widgets/panel_chrome.rs:133","note":"Horizontal mirror of column-first grid.","category":"Panels"},
+    {"id":"proc-layout-row-rtl","role":"Rearrange artboards row RTL","artwork":"proc-layout-row-rtl","reuse":"base+modifier","source":"crates/ui-egui/src/dialogs/rearrange_artboards.rs:44-56; crates/ui-egui/src/widgets/panel_chrome.rs:133","note":"Arrow progresses right to left.","category":"Panels"},
+    {"id":"proc-layout-order-left-to-right","role":"Left-to-right artboard layout order","artwork":"proc-layout-order-left-to-right","reuse":"base","source":"crates/ui-egui/src/dialogs/rearrange_artboards.rs:82-92; crates/ui-egui/src/widgets/panel_chrome.rs:133","note":"Two-cell left-to-right layout control.","category":"Panels"},
+    {"id":"proc-layout-order-right-to-left","role":"Right-to-left artboard layout order","artwork":"proc-layout-order-right-to-left","reuse":"base","source":"crates/ui-egui/src/dialogs/rearrange_artboards.rs:82-92; crates/ui-egui/src/widgets/panel_chrome.rs:133","note":"Two-cell right-to-left layout control.","category":"Panels"},
+    {"id":"proc-link-embedded","role":"Embedded link status","artwork":"image","reuse":"shared","source":"crates/ui-egui/src/panels/links.rs:273","note":"Current source uses registered image SVG; proposed status-specific procedural design is separate.","category":"Panels"},
+    {"id":"proc-layout-column-rtl","role":"Single-column artboard layout with RTL order","artwork":"proc-layout-column","reuse":"shared","source":"crates/ui-egui/src/dialogs/rearrange_artboards.rs:44-56,82-92","note":"Same current geometry as column; order control disabled for one column.","category":"Panels"}
+  ],
+  "note": "IDs are review inventory IDs, not existing registered SVG names. Current-source aliases are explicit. Do not create duplicate drawings for aliases. Use original independent geometry; equivalent functions only."
+}

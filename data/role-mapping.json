@@ -1,0 +1,384 @@
+[
+  {
+    "sourceId": "clipboard-paste",
+    "function": "Capture current variable values",
+    "proposalId": "proposal-capture-data-set",
+    "svg": "svg/proposal-capture-data-set.svg",
+    "evidence": [
+      "crates/ui-egui/src/panels/variables.rs:246-249"
+    ],
+    "command": "dataset.capture",
+    "newProposal": true,
+    "note": "Capture records current variable state as a new data-set row; it does not paste clipboard content."
+  },
+  {
+    "sourceId": "dc-cube",
+    "function": "Open 3D and materials panel",
+    "proposalId": "dc-cube",
+    "svg": "svg/dc-cube.svg",
+    "evidence": [
+      "crates/ui-egui/src/state.rs:224"
+    ],
+    "command": "",
+    "newProposal": false,
+    "note": "Retain the independently redrawn cube only for its 3D panel role."
+  },
+  {
+    "sourceId": "dc-cube",
+    "function": "Warn about non-web-safe color",
+    "proposalId": "proposal-web-color-warning",
+    "svg": "svg/proposal-web-color-warning.svg",
+    "evidence": [
+      "crates/ui-egui/src/panels/color.rs:229-245"
+    ],
+    "command": "",
+    "newProposal": true,
+    "note": "Use the dedicated web warning for the corrected-color control."
+  },
+  {
+    "sourceId": "dc-new-item",
+    "function": "Create a panel item",
+    "proposalId": "dc-new-item",
+    "svg": "svg/dc-new-item.svg",
+    "evidence": [
+      "crates/ui-egui/src/panels/brushes.rs:461",
+      "crates/ui-egui/src/panels/actions.rs:2073",
+      "crates/ui-egui/src/panels/artboards.rs:79"
+    ],
+    "command": "",
+    "newProposal": false,
+    "note": "Retain the add-marked sheet for creation controls."
+  },
+  {
+    "sourceId": "dc-new-item",
+    "function": "Duplicate selected item",
+    "proposalId": "proposal-duplicate-item",
+    "svg": "svg/proposal-duplicate-item.svg",
+    "evidence": [
+      "crates/ui-egui/src/panels/appearance.rs:1474-1476"
+    ],
+    "command": "",
+    "newProposal": true,
+    "note": "Use repeated object frames for duplication rather than the creation cross."
+  },
+  {
+    "sourceId": "layout-grid",
+    "function": "Show guides",
+    "proposalId": "proposal-guides",
+    "svg": "svg/proposal-guides.svg",
+    "evidence": [
+      "crates/ui-egui/src/panels/properties.rs:750-754"
+    ],
+    "command": "view.guides",
+    "newProposal": true,
+    "note": "Use sparse guide axes; the drawing grid remains grid-3x3."
+  },
+  {
+    "sourceId": "layout-grid",
+    "function": "Show grid view",
+    "proposalId": "dc-grid-view",
+    "svg": "svg/dc-grid-view.svg",
+    "evidence": [
+      "crates/ui-egui/src/dialogs/export_for_screens.rs:408"
+    ],
+    "command": "",
+    "newProposal": false,
+    "note": "Use the existing new-system four-card browser glyph instead of the workspace-layout drawing."
+  },
+  {
+    "sourceId": "maximize-2",
+    "function": "Expand traced image",
+    "proposalId": "maximize-2",
+    "svg": "svg/maximize-2.svg",
+    "evidence": [
+      "crates/ui-egui/src/canvas/task_bar.rs:133-134"
+    ],
+    "command": "imageTrace.expand",
+    "newProposal": false,
+    "note": "Retain the opposed expansion arrows for the traced-image action."
+  },
+  {
+    "sourceId": "maximize-2",
+    "function": "Fit dynamic text to its available span",
+    "proposalId": "proposal-dynamic-text",
+    "svg": "svg/proposal-dynamic-text.svg",
+    "evidence": [
+      "crates/ui-egui/src/canvas/task_bar.rs:161-165",
+      "crates/engine/src/cmd/typemenu.rs:81-88"
+    ],
+    "command": "type.dynamicText",
+    "newProposal": true,
+    "note": "Use text plus a span bracket for automatic text fitting."
+  },
+  {
+    "sourceId": "sparkles",
+    "function": "Show smart alignment guides",
+    "proposalId": "proposal-smart-guides",
+    "svg": "svg/proposal-smart-guides.svg",
+    "evidence": [
+      "crates/ui-egui/src/panels/properties.rs:756-757"
+    ],
+    "command": "view.smartGuides",
+    "newProposal": true,
+    "note": "Show approach and snap alignment rather than decorative glints."
+  },
+  {
+    "sourceId": "sparkles",
+    "function": "Inspect and clean artwork",
+    "proposalId": "proposal-cleanup",
+    "svg": "svg/proposal-cleanup.svg",
+    "evidence": [
+      "crates/ui-egui/src/state.rs:228",
+      "crates/ui-egui/src/addons/cleanup.rs:189"
+    ],
+    "command": "",
+    "newProposal": true,
+    "note": "Use cleanup and completion geometry for the artwork-cleanup panel."
+  },
+  {
+    "sourceId": "sparkles",
+    "function": "Randomize saturation and brightness",
+    "proposalId": "proposal-randomize-colors",
+    "svg": "svg/proposal-randomize-colors.svg",
+    "evidence": [
+      "crates/ui-egui/src/dialogs/recolor.rs:665-672"
+    ],
+    "command": "recolor.randomize",
+    "newProposal": true,
+    "note": "The die and tonal swatch identify color-value randomization, not the separate color-order action."
+  },
+  {
+    "sourceId": "sparkles",
+    "function": "Generate document styles",
+    "proposalId": "proposal-generate-css",
+    "svg": "svg/proposal-generate-css.svg",
+    "evidence": [
+      "crates/ui-egui/src/panels/css_properties.rs:149-167",
+      "crates/ui-egui/src/panels.rs:19,186",
+      "crates/ui-egui/src/state.rs:223"
+    ],
+    "command": "",
+    "newProposal": true,
+    "note": "The live control switches the style preview to whole-document scope; its tooltip says Generate CSS. This fourth use is directly evidenced despite its omission from the inventory function list."
+  },
+  {
+    "sourceId": "square-dashed",
+    "function": "Show transparency grid",
+    "proposalId": "proposal-transparency-grid",
+    "svg": "svg/proposal-transparency-grid.svg",
+    "evidence": [
+      "crates/ui-egui/src/panels/properties.rs:744-746"
+    ],
+    "command": "view.transparencyGrid",
+    "newProposal": true,
+    "note": "Use a solid/transparent checker field, distinct from outlined drawing-grid cells."
+  },
+  {
+    "sourceId": "square-dashed",
+    "function": "Isolate selected object",
+    "proposalId": "proposal-isolate",
+    "svg": "svg/proposal-isolate.svg",
+    "evidence": [
+      "crates/ui-egui/src/canvas/task_bar.rs:140-142"
+    ],
+    "command": "object.isolate",
+    "newProposal": true,
+    "note": "Focus corners surround one object; this is not a visibility-grid toggle."
+  },
+  {
+    "sourceId": "square-dashed",
+    "function": "Create an offset path",
+    "proposalId": "proposal-offset-path",
+    "svg": "svg/proposal-offset-path.svg",
+    "evidence": [
+      "crates/ui-egui/src/canvas/task_bar.rs:178-183"
+    ],
+    "command": "object.path.offsetPath",
+    "newProposal": true,
+    "note": "Use nested contours and an outward normal; keep the interactive Contour Tool identity separate."
+  },
+  {
+    "sourceId": "square-dashed",
+    "function": "Represent a missing icon",
+    "proposalId": "square-dashed",
+    "svg": "svg/square-dashed.svg",
+    "evidence": [
+      "crates/ui-egui/src/icons.rs:11,99-104"
+    ],
+    "command": "",
+    "newProposal": false,
+    "note": "Retain only as an explicit generic missing-icon fallback. This is not a valid role-specific substitute for an unregistered 3D-box tool."
+  },
+  {
+    "sourceId": "align-horizontal-justify-start",
+    "function": "Open tab stops panel",
+    "proposalId": "proposal-tabs-panel",
+    "svg": "svg/proposal-tabs-panel.svg",
+    "evidence": [
+      "crates/ui-egui/src/state.rs:207"
+    ],
+    "command": "panel:tabs",
+    "newProposal": true,
+    "note": "Use ruler and tab-stop markers for the Tabs panel. Cmd+Shift+T is the source-inventory shortcut; this registered id is not an unused object-alignment control."
+  },
+  {
+    "sourceId": "chart-column",
+    "function": "Open variable bindings panel",
+    "proposalId": "proposal-variables",
+    "svg": "svg/proposal-variables.svg",
+    "evidence": ["crates/ui-egui/src/state.rs:225", "crates/ui-egui/src/panels/variables.rs:223-249"],
+    "command": "",
+    "newProposal": true,
+    "note": "Three field/value rows connect to a shared binding rail, distinguishing variables from a graph plot."
+  },
+  {
+    "sourceId": "circle",
+    "function": "Open hue and saturation-value wheel",
+    "proposalId": "proposal-color-wheel",
+    "svg": "svg/proposal-color-wheel.svg",
+    "evidence": ["crates/ui-egui/src/state.rs:220", "crates/ui-egui/src/panels/color_wheel.rs:1-8"],
+    "command": "",
+    "newProposal": true,
+    "note": "A hue-ring outline and four radial sample ticks surround a square saturation/value field, rather than using a plain circle."
+  },
+  {
+    "sourceId": "spline-pointer",
+    "function": "Open object event scripting",
+    "proposalId": "proposal-svg-interactivity",
+    "svg": "svg/proposal-svg-interactivity.svg",
+    "evidence": ["crates/ui-egui/src/state.rs:218", "crates/ui-egui/src/panels/svg_interactivity.rs:1-7"],
+    "command": "",
+    "newProposal": true,
+    "note": "A hollow event pointer sits between hand-drawn code braces, separating event scripting from Smart Pen path editing."
+  },
+  {
+    "sourceId": "message-circle",
+    "function": "Open script run output console",
+    "proposalId": "proposal-script-console",
+    "svg": "svg/proposal-script-console.svg",
+    "evidence": ["crates/ui-egui/src/state.rs:226", "crates/ui-egui/src/panels/script_console.rs:1-6"],
+    "command": "",
+    "newProposal": true,
+    "note": "A terminal prompt and two output rules sit inside a console frame; no speech bubble implies comments."
+  },
+  {
+    "sourceId": "text-cursor-input",
+    "function": "Browse font glyphs and alternates",
+    "proposalId": "proposal-glyphs",
+    "svg": "svg/proposal-glyphs.svg",
+    "evidence": ["crates/ui-egui/src/state.rs:203", "crates/ui-egui/src/panels/glyphs.rs:1-11"],
+    "command": "",
+    "newProposal": true,
+    "note": "A four-cell specimen browser holds two distinct hand-drawn glyph forms, with no text-input caret or font dependency."
+  },
+  {
+    "sourceId": "dc-touch-type",
+    "function": "Open typographic feature controls",
+    "proposalId": "proposal-opentype",
+    "svg": "svg/proposal-opentype.svg",
+    "evidence": ["crates/ui-egui/src/state.rs:205", "crates/ui-egui/src/panels/opentype.rs:1-3"],
+    "command": "",
+    "newProposal": true,
+    "note": "Two separate upper glyph stems feed a connected lower ligature specimen, distinguishing feature substitution from per-character transformation."
+  },
+  {
+    "sourceId": "dc-options",
+    "function": "Expand brush strokes into artwork",
+    "proposalId": "proposal-expand-brush",
+    "svg": "svg/proposal-expand-brush.svg",
+    "evidence": ["crates/ui-egui/src/panels/brushes.rs:456-457", "crates/engine/src/cmd/brushsym.rs:169-176"],
+    "command": "object.expandBrush",
+    "newProposal": true,
+    "note": "A live brush ribbon resolves through a downward arrow into two separate solid art regions."
+  },
+  {
+    "sourceId": "dc-remove-brush",
+    "function": "Remove brush styling while preserving path",
+    "proposalId": "proposal-remove-brush-style",
+    "svg": "svg/proposal-remove-brush-style.svg",
+    "evidence": ["crates/ui-egui/src/panels/brushes.rs:453-454", "crates/engine/src/cmd/brushsym.rs:97-104"],
+    "command": "brush.remove",
+    "newProposal": true,
+    "note": "A brush sample and detached minus sit above an intact plain curve, indicating removal of styling rather than anchors."
+  },
+  {
+    "sourceId": "dc-anchor",
+    "function": "Slide an anchor along its curve",
+    "proposalId": "proposal-slide-anchor",
+    "svg": "svg/proposal-slide-anchor.svg",
+    "evidence": ["crates/tools/src/addons/slide_anchor.rs:1-5"],
+    "command": "addon.pathtools.slideAnchor",
+    "newProposal": true,
+    "note": "A hollow anchor interrupts one preserved curve; a two-ended tangent arrow indicates sliding rather than corner conversion."
+  },
+  {
+    "sourceId": "dc-rounded-rect",
+    "function": "Edit an individual corner radius",
+    "proposalId": "proposal-corner-tool",
+    "svg": "svg/proposal-corner-tool.svg",
+    "evidence": ["crates/tools/src/addons/corner_tool.rs:1-7"],
+    "command": "addon.pathtools.cornerSet",
+    "newProposal": true,
+    "note": "One rounded path corner and a radial handle distinguish corner editing from drawing a complete rounded rectangle."
+  },
+  {
+    "sourceId": "slice",
+    "function": "Select or resize an existing slice",
+    "proposalId": "proposal-slice-select",
+    "svg": "svg/proposal-slice-select.svg",
+    "evidence": ["crates/tools/src/slice.rs:224-252"],
+    "command": "object.slice.select",
+    "newProposal": true,
+    "note": "An indexed slice boundary and hollow selection pointer show selecting an existing slice rather than drawing a blade cut."
+  },
+  {
+    "sourceId": "dc-join",
+    "function": "Merge coincident path stretches",
+    "proposalId": "proposal-shared-edge",
+    "svg": "svg/proposal-shared-edge.svg",
+    "evidence": ["crates/tools/src/addons/shared_edge.rs:1-7"],
+    "command": "addon.pathtools.mergeEdge",
+    "newProposal": true,
+    "note": "Two dashed curves share their endpoints and resolve to one solid midpoint segment, distinguishing shared-edge merging from joining open ends."
+  },
+  {
+    "sourceId": "globe",
+    "function": "Open generated style declarations",
+    "proposalId": "proposal-css-properties",
+    "svg": "svg/proposal-css-properties.svg",
+    "evidence": ["crates/ui-egui/src/state.rs:223", "crates/ui-egui/src/panels/css_properties.rs:114-126"],
+    "command": "",
+    "newProposal": true,
+    "note": "Code braces surround three property/value declaration rules; the icon identifies a style panel rather than a website."
+  },
+  {
+    "sourceId": "share-2",
+    "function": "Export assets for screens",
+    "proposalId": "proposal-asset-export",
+    "svg": "svg/proposal-asset-export.svg",
+    "evidence": ["crates/ui-egui/src/state.rs:222", "crates/ui-egui/src/canvas/task_bar.rs:95"],
+    "command": "file.exportForScreens",
+    "newProposal": true,
+    "note": "An asset tile, outward export arrow, and receiving tray replace the unrelated social-sharing network."
+  },
+  {
+    "sourceId": "layers",
+    "function": "Open document layers panel",
+    "proposalId": "proposal-layers-stack",
+    "svg": "svg/proposal-layers-stack.svg",
+    "evidence": ["crates/ui-egui/src/state.rs:158"],
+    "command": "panel:layers",
+    "newProposal": true,
+    "note": "Use three separated stacked planes for the document Layers identity instead of the registry-named hierarchy-tree drawing."
+  },
+  {
+    "sourceId": "map",
+    "function": "Navigate document thumbnail and viewport",
+    "proposalId": "proposal-navigator",
+    "svg": "svg/proposal-navigator.svg",
+    "evidence": ["crates/ui-egui/src/state.rs:212", "crates/ui-egui/src/panels/navigator.rs:1-5,296"],
+    "command": "panel:navigator",
+    "newProposal": true,
+    "note": "Use the document thumbnail and off-center viewport for both the Navigator panel rail and its empty state."
+  }
+]
