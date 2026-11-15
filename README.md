@@ -6,9 +6,9 @@ An original, consistent icon set for [VectorCraft](https://github.com/storytold/
 
 ## How to view
 
-- **In the browser:** open the PNGs in [`boards/`](boards/). Start with the before/after boards below, then the contact sheets of the approved set (`approved-*-48px-dark.png` and `-light.png`).
+- **In the browser:** open the PNGs in [`boards/`](boards/). Start with the before/after boards below, then the contact sheets of the proposed set (`approved-*-48px-dark.png` and `-light.png`).
 - **The drawings:** one SVG per icon in [`svg/`](svg/), named by icon id. [`manifest.json`](manifest.json) maps each id to its category, role, construction note and revision. GitHub renders SVGs directly; open any file in the folder.
-- **Editing:** [`figcraft/`](figcraft/) holds the approved set as a FigCraft document (the style-rules page plus one page per category, all vector).
+- **Editing:** [`figcraft/`](figcraft/) holds the proposed set as a FigCraft document (the style-rules page plus one page per category, all vector).
 - **Details:** [`inventory.md`](inventory.md) (every icon: role, where it is used, shortcut, equivalent, verdict), [`style-rules.md`](style-rules.md), [`originality-register.md`](originality-register.md), and machine-readable data in [`data/`](data/).
 
 ## Before and after
@@ -48,11 +48,11 @@ An original set, drawn from scratch for VectorCraft, following the metaphors tha
 - One grid: 24×24 viewBox, 2-unit optical inset, 1.6 stroke, round caps and joins, solid fills only for emphasis. Legible at 16, 20 and 24 px, on dark and light themes.
 - One concept per function. Where the app has several tools that shared one icon, each gets its own.
 - No tracing, no copying, no icon fonts or screenshots as sources. Each drawing has a written construction note and a note on how it differs from the equivalent icon in other apps.
-- Reviewed icon by icon in two rounds; the full set is approved.
+- Reviewed icon by icon in three rounds; this is the final draft from my side, pending maintainer feedback.
 
 ![Grid and style rules](boards/grid-and-style-rules.png)
 
-## The approved set
+## The proposed set
 
 | Category | Drawings | Dark | Light |
 |---|---|---|---|

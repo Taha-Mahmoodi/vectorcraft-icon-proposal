@@ -316,7 +316,7 @@
   "v2": {
    "convention": "convention seen in Figma/Inkscape/Affinity Designer/Sketch shape-tool groups (clean primitive circle + square) combined with the pencil used for freehand drawing in Inkscape/Krita/GIMP/Affinity",
    "drawing": "Clean outlined circle stacked over a clean outlined square, with a diagonal pencil beside them drawing toward the square: freehand drawing yields tidy geometric shapes.",
-   "uncertain": "Shape recognition has no strongly shared cross-app icon; this pairs the shared shape-group and pencil metaphors. Maintainer may prefer an icon without the pencil."
+   "uncertain": "Shape recognition has no strongly shared cross-app icon; this pairs the shared shape-group and pencil metaphors. Reviewer may prefer an icon without the pencil."
   },
   "v3": {
    "convention": "convention seen in Procreate (QuickShape), Inkscape (Pencil 'shape' / smoothing modes), Krita (freehand with shape assistants) and Affinity/Figma/Sketch shape tools: a wobbly hand-drawn stroke and the clean geometric primitive it becomes",
@@ -451,7 +451,7 @@
   "sha256": "ffabf4702ee15d51b7340cb3b4ea729477c77ee5748e32108f067d19cc3e2852",
   "v2": {
    "convention": "convention seen in Figma/Photoshop/Affinity Designer/Inkscape/GIMP flip-horizontal commands: two mirrored right triangles across a dashed vertical axis, one solid and one hollow",
-   "drawing": "Kept the approved idea: dashed vertical mirror axis; left triangle solid-filled (original), right mirrored triangle outlined (reflection), with a clear gap on both sides of the axis.",
+   "drawing": "Kept the earlier idea: dashed vertical mirror axis; left triangle solid-filled (original), right mirrored triangle outlined (reflection), with a clear gap on both sides of the axis.",
    "uncertain": ""
   }
  },
@@ -476,7 +476,7 @@
   "sha256": "f8605ccffe417b511b14e237dc4215942d90cbc01f53c435092d9541be5ed6c6",
   "v2": {
    "convention": "convention seen in Photoshop/Affinity Designer/Inkscape/GIMP/Krita skew-shear transforms: a rectangle slanted into a parallelogram",
-   "drawing": "Maintainer's request: a dashed upright rectangle ghost (the unsheared object) sits behind a solid filled parallelogram sharing the same base; only the ghost's left and top edges remain visible, so the slant reads against the original.",
+   "drawing": "Reviewer's request: a dashed upright rectangle ghost (the unsheared object) sits behind a solid filled parallelogram sharing the same base; only the ghost's left and top edges remain visible, so the slant reads against the original.",
    "uncertain": ""
   }
  },
@@ -523,7 +523,7 @@
    "convention": "convention seen in Krita (Liquify transform brush), GIMP (Warp Transform), Photoshop (Liquify Forward Warp) and Affinity Photo (Liquify Push Forward): a round brush cursor outline is dragged and the artwork under its radius is displaced while the rest stays put",
    "drawing": "A round brush cursor (ring with a solid centre dot) sitting against a single path, which is straight at both ends and bowed outward only where the brush has pushed into it; the whole mark leans diagonally toward the push direction. Changed from v2: no frame, no mesh, no grid lines at all; the drawing is now the brush and one locally displaced path instead of an envelope.",
    "originality": "[INFERENCE, from general knowledge of Illustrator's public tool descriptions] Illustrator's Warp tool icon is commonly described as a pointing finger smudging a wavy line/shape. v3 has no finger or hand and no mesh/envelope frame; it uses the brush-radius cursor (ring + centre dot) that liquify brushes in Krita/GIMP/Photoshop/Affinity show, plus one path with a localized bulge.",
-   "uncertain": "Ring + dot can read as a target or 'record' glyph before the bent path is noticed; at 16 px the bulge still reads but is thin. If the maintainer wants a stronger 'push' read, the ring could become a solid disc (fingertip-like ball), at the cost of the brush-cursor reference. I have not verified Illustrator's current icon artwork; the originality note relies on its commonly described finger-and-wave design."
+   "uncertain": "Ring + dot can read as a target or 'record' glyph before the bent path is noticed; at 16 px the bulge still reads but is thin. If the reviewer wants a stronger 'push' read, the ring could become a solid disc (fingertip-like ball), at the cost of the brush-cursor reference. I have not verified Illustrator's current icon artwork; the originality note relies on its commonly described finger-and-wave design."
   }
  },
  {
@@ -650,7 +650,7 @@
    "convention": "convention seen in Inkscape (Paint Bucket, fills areas bounded by any crossing paths), GIMP/Krita/Photoshop/Affinity fill tools (tipped pail = fill the bounded area): a tipped pail and a region enclosed by intersecting strokes that receives the paint",
    "drawing": "A round pail (elliptical mouth, tapered body) tips toward lower right, pouring into four open straight paths that cross each other with visible overhangs. The face they enclose is solid. Changed from v2: the closed overlapping squares are replaced by crossing open lines with overhanging ends, so the filled area is visibly a face formed by intersecting paths, not by a shape. The pail is now a cylindrical side-view pail that faces the filled cell.",
    "originality": "[INFERENCE, from general knowledge] Illustrator's Live Paint Bucket icon is commonly described as a paint bucket with a small paint drip/brush detail. v3 uses a cylindrical pail with no drip, together with a cell formed by crossing open paths with overhangs. Differs from our plain fill bucket (new-system/paint-bucket.svg), which has a cube-like tipped bucket plus a drop and no region.",
-   "uncertain": "The crossing-lines quad with overhangs is related to crop-mark glyphs; the pail and solid face should disambiguate it, but the maintainer may see a crop icon. The layout is still pail upper-left with the region lower-right, as in v2, though the region's construction is new. The pail-to-lines gap is 1.5 units, under the 2-unit guideline. I have not confirmed the Illustrator icon details."
+   "uncertain": "The crossing-lines quad with overhangs is related to crop-mark glyphs; the pail and solid face should disambiguate it, but the reviewer may see a crop icon. The layout is still pail upper-left with the region lower-right, as in v2, though the region's construction is new. The pail-to-lines gap is 1.5 units, under the 2-unit guideline. I have not confirmed the Illustrator icon details."
   }
  },
  {
@@ -2892,7 +2892,7 @@
   "v2": {
    "convention": "convention seen in Affinity Designer (Pen smart mode), Inkscape (Spiro / BSpline pen modes), Illustrator (Curvature) and Figma (bend in vector edit) apps: a free-flowing smooth curve through round, handle-less points; round nodes mean auto-smoothed, as opposed to square anchors with handles",
    "drawing": "A single continuous curve that rises, loops over at the top and crosses itself, with solid round nodes at both ends and a larger one on top of the loop; no pointer, nib, square anchors or handles, so it differs from dc-selection/dc-direct, pen-tool*, spline (S-curve + squares) and dc-anchor.",
-   "uncertain": "The loop silhouette was chosen mainly for family distinctness. If the maintainer expects a pointer-based glyph, that conflicts with the \"too similar to the family\" comment and needs a decision."
+   "uncertain": "The loop silhouette was chosen mainly for family distinctness. If the reviewer expects a pointer-based glyph, that conflicts with the \"too similar to the family\" comment and needs a decision."
   }
  },
  {
@@ -3081,9 +3081,9 @@
   },
   "v3": {
    "convention": "convention seen in Inkscape/GIMP/Krita/Affinity Designer apps: color warnings sit beside the picked swatch and use the generic hazard triangle with an exclamation mark; 'web' is commonly signed by a globe made of a circle, an equator and one meridian",
-   "drawing": "A solid colour swatch (rounded square, 3–18) with a globe knocked out of it as negative space (ring, equator and one meridian cut through the fill with evenodd). The bottom-right corner is notched by a 1.3-unit gap around a small solid warning triangle with the '!' knocked out. Changes from v2: the swatch now carries the web globe as a cut-out, as the maintainer asked. The outlined triangle is now a smaller solid badge with a knocked-out '!', so it still reads at 16 px. The globe cuts are 1.5 units wide and sit on the 16 px pixel grid. At 16 px the meridian merges into a vertical bar, so the globe reads as a circle with a cross.",
+   "drawing": "A solid colour swatch (rounded square, 3–18) with a globe knocked out of it as negative space (ring, equator and one meridian cut through the fill with evenodd). The bottom-right corner is notched by a 1.3-unit gap around a small solid warning triangle with the '!' knocked out. Changes from v2: the swatch now carries the web globe as a cut-out, as the reviewer asked. The outlined triangle is now a smaller solid badge with a knocked-out '!', so it still reads at 16 px. The globe cuts are 1.5 units wide and sit on the 16 px pixel grid. At 16 px the meridian merges into a vertical bar, so the globe reads as a circle with a cross.",
    "originality": "From general knowledge, Illustrator's colour picker marks a non-web-safe colour with a small 3D cube, not a globe or a swatch. Ours shows no cube: a solid swatch with a globe knocked out, plus a notched hazard badge. The hazard triangle is a general safety sign used by many apps, not Illustrator artwork.",
-   "uncertain": "The path is a flattened polygon (generated with a boolean subtract). It is about 2.5 KB, longer than the hand-written icons, but it uses only path and evenodd. At 16 px the globe reads as a circle with a cross rather than a detailed globe. The maintainer may also want the badge removed, leaving only the globe swatch. I recall Illustrator's web-warning cube only from memory and did not check it."
+   "uncertain": "The path is a flattened polygon (generated with a boolean subtract). It is about 2.5 KB, longer than the hand-written icons, but it uses only path and evenodd. At 16 px the globe reads as a circle with a cross rather than a detailed globe. The reviewer may also want the badge removed, leaving only the globe swatch. I recall Illustrator's web-warning cube only from memory and did not check it."
   },
   "v4": {
    "convention": "A caution triangle with a small symbol inside is the shared way to flag a typed warning (web, print, gamut); the globe is the usual web symbol.",
